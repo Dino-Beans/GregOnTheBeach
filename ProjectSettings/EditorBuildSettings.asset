@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/BeachLevelBlockout.unity
+    guid: 85418625341a5fb4a92a37dc2c529dd1
   m_configObjects: {}
