@@ -339,7 +339,7 @@ PrefabInstance:
     - target: {fileID: -1450560370781704108, guid: 98849f31dbe2e9447a9127125e26c041, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3f42f5ab51312484aa08e7e35f8bc21f, type: 2}
+      objectReference: {fileID: 2100000, guid: 1522e0606aac9424e91ffd6fc2ce831f, type: 2}
     - target: {fileID: -290750445479886849, guid: 98849f31dbe2e9447a9127125e26c041, type: 3}
       propertyPath: m_Name
       value: RightDownArm

@@ -2273,6 +2273,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1174835141}
+    - target: {fileID: 1878572661640301271, guid: 0dcc9eeae6f75df4f887e9de80a8d45c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1522e0606aac9424e91ffd6fc2ce831f, type: 2}
     - target: {fileID: 2650405227089920570, guid: 0dcc9eeae6f75df4f887e9de80a8d45c, type: 3}
       propertyPath: m_AngularXDrive.positionSpring
       value: 300
