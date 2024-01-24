@@ -14,35 +14,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 390b73ef0e9c2a645acdbeafe46b8d11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -37.19
+      value: 5.4453583
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 390b73ef0e9c2a645acdbeafe46b8d11, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.02
+      value: -9.969965
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 390b73ef0e9c2a645acdbeafe46b8d11, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 61.14
+      value: 56.916103
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 390b73ef0e9c2a645acdbeafe46b8d11, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.999762
+      value: 0.99871075
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 390b73ef0e9c2a645acdbeafe46b8d11, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.021814892
+      value: 0.05076358
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 390b73ef0e9c2a645acdbeafe46b8d11, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 390b73ef0e9c2a645acdbeafe46b8d11, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 390b73ef0e9c2a645acdbeafe46b8d11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 2.5
+      value: 5.82
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 390b73ef0e9c2a645acdbeafe46b8d11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -59,6 +59,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 390b73ef0e9c2a645acdbeafe46b8d11, type: 3}
       propertyPath: m_Name
       value: Sun Lounger-Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 390b73ef0e9c2a645acdbeafe46b8d11, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 390b73ef0e9c2a645acdbeafe46b8d11, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -92,5 +100,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.7041245, y: 0.67840004, z: 4.047129}
-  m_Center: {x: 2.5197754, y: 4.6738143, z: -21.689093}
+  m_Size: {x: 1.7339783, y: 0.67840004, z: 4.0471296}
+  m_Center: {x: -3.0495224, y: 4.673883, z: -21.689167}
