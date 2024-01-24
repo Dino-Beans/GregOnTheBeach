@@ -2325,6 +2325,10 @@ PrefabInstance:
       propertyPath: anim
       value: 
       objectReference: {fileID: 1652136189}
+    - target: {fileID: 6182410152453210027, guid: 0dcc9eeae6f75df4f887e9de80a8d45c, type: 3}
+      propertyPath: thrust
+      value: 3200
+      objectReference: {fileID: 0}
     - target: {fileID: 7596562182469851122, guid: 0dcc9eeae6f75df4f887e9de80a8d45c, type: 3}
       propertyPath: target
       value: 
