@@ -23,6 +23,8 @@ public class MovePlayer : MonoBehaviour
 
     void Update()
     {
+        //GOD I HATE THE INPUT SYSTEM UNREAL IS SO MUCH BETTER
+        //MAYBE A MORE EFFECIENT WAY TO DO IT!!!
         if (Input.GetKey(KeyCode.W))
         {
             anim.SetBool("isWalking", true);
@@ -33,6 +35,7 @@ public class MovePlayer : MonoBehaviour
             anim.SetBool("isWalking", false);
         }
 
+        //SPACE = JUMP AND I KNOW ITS SCUFFED!
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(transform.up * jumpForce);
