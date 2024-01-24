@@ -10,6 +10,7 @@ public class MovePlayer : MonoBehaviour
 
     Rigidbody rb;
     public float thrust = 3200f;
+    public float jumpForce = 1000f;
 
     public float sensitivity = 1000f;
 
@@ -32,6 +33,11 @@ public class MovePlayer : MonoBehaviour
             anim.SetBool("isWalking", false);
         }
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(transform.up * jumpForce);
+        }
+       
         float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
 
         transform.Rotate(Vector3.up * mouseX);

@@ -5076,6 +5076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1652136189}
   thrust: 3200
+  jumpForce: 4000
   sensitivity: 1000
 --- !u!1001 &1213998860
 PrefabInstance:
