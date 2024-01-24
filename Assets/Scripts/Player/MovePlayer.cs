@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class movePlayer : MonoBehaviour
+public class MovePlayer : MonoBehaviour
 {
 
     [SerializeField]
     private Animator anim;
 
     Rigidbody rb;
-    public float thrust;
+    public float thrust = 3200f;
 
     public float sensitivity = 1000f;
 
