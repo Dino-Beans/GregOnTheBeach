@@ -12,7 +12,7 @@ public class MovePlayer : MonoBehaviour
     public float thrust = 3200f;
     public float jumpForce = 1000f;
 
-    public float sensitivity = 1000f;
+    //public float sensitivity = 1000f;
 
     void Start()
     {
@@ -25,7 +25,24 @@ public class MovePlayer : MonoBehaviour
     {
         //GOD I HATE THE INPUT SYSTEM UNREAL IS SO MUCH BETTER
         //MAYBE A MORE EFFECIENT WAY TO DO IT!!!
+
+
         if (Input.GetKey(KeyCode.W))
+        {
+            anim.SetBool("isWalking", true);
+            rb.AddForce(transform.forward * thrust * Time.deltaTime);
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            anim.SetBool("isWalking", true);
+            rb.AddForce(transform.forward * thrust * Time.deltaTime);
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            anim.SetBool("isWalking", true);
+            rb.AddForce(transform.forward * thrust * Time.deltaTime);
+        }
+        else if (Input.GetKey(KeyCode.D))
         {
             anim.SetBool("isWalking", true);
             rb.AddForce(transform.forward * thrust * Time.deltaTime);
@@ -35,14 +52,14 @@ public class MovePlayer : MonoBehaviour
             anim.SetBool("isWalking", false);
         }
 
-        //SPACE = JUMP AND I KNOW ITS SCUFFED!
+        //space = jump and i know its scuffed!
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(transform.up * jumpForce);
         }
        
-        float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
+        //float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
 
-        transform.Rotate(Vector3.up * mouseX);
+        //transform.Rotate(Vector3.up * mouseX);
     }
 }
