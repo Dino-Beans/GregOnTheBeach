@@ -12,10 +12,7 @@ public class catcher : MonoBehaviour
 
     public void chaseFrisbee(float throwRange, Transform thrower, Vector3 Vx)
     {
-        Debug.Log("magnitude: " + throwRange);
         Vector3 R = Vx.normalized * throwRange;
-
-        Debug.Log("x velocity: " + Vx);
 
         catchTarget = thrower.position + R;
         hasTarget = true;
