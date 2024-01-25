@@ -24,9 +24,8 @@ public class flight : MonoBehaviour
     [Header("Player")]
     public Transform player;
     private bool timing = false;
-    [SerializeField]
     private float timer;
-    public float detectionTime;
+    public float detectionTime = 8f;
 
 
     private bool diving = false;
@@ -55,6 +54,7 @@ public class flight : MonoBehaviour
                 incrementIndex();
             }
 
+
             // player detection
             float distance = Vector3.Distance(transform.position, player.position);
             if (distance < lookDistance)
@@ -63,17 +63,16 @@ public class flight : MonoBehaviour
                 if (timing)
                 {
                     timer += Time.deltaTime;
-                    if (timer >= detectionTime)
+                    if (timer > detectionTime)
                     {
-                        timer = 0;
                         timing = false;
 
                         if (Physics.Raycast(transform.position, (player.position - transform.position), out hit, lookDistance))
                         {
-                            if (hit.transform.tag == "Player")
+                            if (hit.transform == player.transform)
                             {
                                 Debug.DrawRay(transform.position, (player.position - transform.position), Color.red);
-                                Debug.Log("dive");
+                                Debug.Log(hit.collider);
                                 diving = true;
                                 agent.enabled = false;
                             }
@@ -82,10 +81,11 @@ public class flight : MonoBehaviour
                 }
                 else if (Physics.Raycast(transform.position, (player.position - transform.position), out hit, lookDistance))
                 {
-                    if (hit.transform.tag == "Player")
+                    if (hit.transform == player.transform)
                     {
                         timing = true;
                         timer = 0;
+                        Debug.Log("in range");
                     }
                 }
             }
@@ -93,6 +93,7 @@ public class flight : MonoBehaviour
             {
                 timing = false;
                 timer = 0;
+                Debug.Log("lost sight");
 
             }
         }
