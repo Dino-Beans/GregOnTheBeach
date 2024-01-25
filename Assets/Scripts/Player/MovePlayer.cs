@@ -24,9 +24,8 @@ public class MovePlayer : MonoBehaviour
     void Update()
     {
         //GOD I HATE THE INPUT SYSTEM UNREAL IS SO MUCH BETTER
-        //MAYBE A MORE EFFECIENT WAY TO DO IT!!!
-
-
+        //THIS IS SO BAD BUT I COULD NOT GET IT TO WORK WITHOUT DOING SOME DUMBSTUFF I HATE THIS WITH A BURNING PASSION
+        //arrrrrrrrrrrrrrrrrrrrrrrrrrrrrggggggggggggggghhhhhhhhhhhhhhhhh
         if (Input.GetKey(KeyCode.W))
         {
             anim.SetBool("isWalking", true);
@@ -51,15 +50,5 @@ public class MovePlayer : MonoBehaviour
         {
             anim.SetBool("isWalking", false);
         }
-
-        //space = jump and i know its scuffed!
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.AddForce(transform.up * jumpForce);
-        }
-       
-        //float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
-
-        //transform.Rotate(Vector3.up * mouseX);
     }
 }
