@@ -12,7 +12,7 @@ public class MovePlayer : MonoBehaviour
     public float thrust = 3200f;
     public float jumpForce = 1000f;
 
-    //public float sensitivity = 1000f;
+    public float sensitivity = 1000f;
 
     void Start()
     {
@@ -50,5 +50,9 @@ public class MovePlayer : MonoBehaviour
         {
             anim.SetBool("isWalking", false);
         }
+
+        float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
+
+        transform.Rotate(Vector3.up * mouseX);
     }
 }
