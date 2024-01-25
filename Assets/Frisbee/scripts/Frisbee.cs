@@ -63,7 +63,6 @@ public class Frisbee : MonoBehaviour
 
         // calculate initial velocity of the projectile
         Vector3 V0 = Vx + Vy;
-        Debug.Log("initial velocity: " + V0);
 
         held = false;
         frisbody.AddForce(V0, ForceMode.Impulse);
