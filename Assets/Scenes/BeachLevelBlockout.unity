@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.2361567, g: 0.50483805, b: 0.7920265, a: 1}
+  m_IndirectSpecularColor: {r: 0.23615661, g: 0.50483805, b: 0.7920266, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12798,7 +12798,7 @@ PrefabInstance:
     - target: {fileID: 8068636796971899500, guid: 3050698ef7242fa4eabfd01f30c0cde6, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1207062703}
+      objectReference: {fileID: 638979536}
     - target: {fileID: 8068636796971899500, guid: 3050698ef7242fa4eabfd01f30c0cde6, type: 3}
       propertyPath: target1
       value: 
@@ -12980,12 +12980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1652136189}
   thrust: 3200
-  sensitivity: 1000
---- !u!4 &1207062703 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4185672915442449916, guid: 0dcc9eeae6f75df4f887e9de80a8d45c, type: 3}
-  m_PrefabInstance: {fileID: 756378125}
-  m_PrefabAsset: {fileID: 0}
+  jumpForce: 1000
 --- !u!1001 &1211857962
 PrefabInstance:
   m_ObjectHideFlags: 0
