@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CityLevelBlockout.unity
     guid: d9b4566978e0745439d31c57ba9556f1
+  - enabled: 1
+    path: Assets/Scenes/ControlScreen.unity
+    guid: dfe5f11390034714eabaf7b1b83aae70
   m_configObjects: {}

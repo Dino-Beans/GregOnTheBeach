@@ -19,5 +19,10 @@ public class Menu : MonoBehaviour
         Application.Quit();
     }
 
+    public void MenubtnPressed()
+    {
+        SceneManager.LoadScene("TitleScreen");
+    }
+
 
 }
