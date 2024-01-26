@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 2262115505257798543}
   m_Layer: 0
   m_Name: seagull
-  m_TagString: Untagged
+  m_TagString: seagull
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  lookDistance: 60
+  lookDistance: 50
   target: {x: 0, y: 0, z: 0}
   target1: {fileID: 0}
   target2: {fileID: 0}
@@ -596,7 +596,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 68a3998b87501484a8919ddfccdaf9c3, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 1
   Mute: 0
