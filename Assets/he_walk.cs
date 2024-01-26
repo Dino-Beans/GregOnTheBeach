@@ -19,9 +19,13 @@ public class path : MonoBehaviour
     [SerializeField]
     private int pointIndex = 0;
 
+    [Header("Animation")]
+    private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         agent.speed = speed;
         agent.enabled = true;
@@ -44,7 +48,10 @@ public class path : MonoBehaviour
 
             if (Vector3.Distance(transform.position, targets[pointIndex].position) < agent.stoppingDistance || !agent.hasPath)
             {
-                pointIndex = Random.Range(0, pointsParent.childCount - 1);
+                int newIndex = Random.Range(0, pointsParent.childCount - 1);
+
+                pointIndex = newIndex;
+                animator.SetBool("walking", false);
                 agent.enabled = false;
                 StartCoroutine(waitToLeavePoint());
             }
@@ -62,6 +69,7 @@ public class path : MonoBehaviour
     {
         yield return new WaitForSeconds(Random.Range(1, 3));
         agent.enabled = true;
+        animator.SetBool("walking", true);
         agent.destination = targets[pointIndex].position;
     }
 
