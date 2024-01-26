@@ -9,6 +9,7 @@ public class MovePlayer : MonoBehaviour
     private Animator anim;
 
     [SerializeField] GameObject PauseMenu;
+    public GameObject footstep;
 
     Rigidbody rb;
     public float thrust = 3200f;
@@ -21,6 +22,7 @@ public class MovePlayer : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        footstep.SetActive(false);
     }
 
     void Update()
@@ -32,25 +34,12 @@ public class MovePlayer : MonoBehaviour
         {
             anim.SetBool("isWalking", true);
             rb.AddForce(transform.forward * thrust * Time.deltaTime);
+            footstep.SetActive(true);
         }
-        //else if (Input.GetKey(KeyCode.A))
-        //{
-        //    anim.SetBool("isWalking", true);
-        //    rb.AddForce(-transform.right * thrust * Time.deltaTime);
-        //}
-        //else if (Input.GetKey(KeyCode.S))
-        //{
-        //    anim.SetBool("isWalking", true);
-        //    rb.AddForce(-transform.forward * thrust * Time.deltaTime);
-        //}
-        //else if (Input.GetKey(KeyCode.D))
-        //{
-        //    anim.SetBool("isWalking", true);
-        //    rb.AddForce(transform.right * thrust * Time.deltaTime);
-        //}
         else
         {
             anim.SetBool("isWalking", false);
+            footstep.SetActive(false);
         }
 
 
