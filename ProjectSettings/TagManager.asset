@@ -8,6 +8,7 @@ TagManager:
   - seagull
   - ocean
   - car
+  - npc
   layers:
   - Default
   - TransparentFX

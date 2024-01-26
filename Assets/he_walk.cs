@@ -50,7 +50,8 @@ public class path : MonoBehaviour
             {
                 int newIndex = Random.Range(0, pointsParent.childCount - 1);
 
-                pointIndex = newIndex;
+                pointIndex = newIndex == pointIndex ? newIndex++ : newIndex;
+                pointIndex = Mathf.Clamp(pointIndex, 0, pointsParent.childCount-1);
                 animator.SetBool("walking", false);
                 agent.enabled = false;
                 StartCoroutine(waitToLeavePoint());
