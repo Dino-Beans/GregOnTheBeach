@@ -303,6 +303,10 @@ PrefabInstance:
       objectReference: {fileID: 887608467888832324}
     - target: {fileID: 273389606551298500, guid: 684414bc0609cec4190c2e5d1f5a468e, type: 3}
       propertyPath: healthValues.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 273389606551298500, guid: 684414bc0609cec4190c2e5d1f5a468e, type: 3}
+      propertyPath: healthValues.Array.data[0].Value
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 273389606551298500, guid: 684414bc0609cec4190c2e5d1f5a468e, type: 3}
@@ -314,12 +318,20 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 273389606551298500, guid: 684414bc0609cec4190c2e5d1f5a468e, type: 3}
+      propertyPath: healthValues.Array.data[3].Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 273389606551298500, guid: 684414bc0609cec4190c2e5d1f5a468e, type: 3}
       propertyPath: healthValues.Array.data[1].TagName
       value: ocean
       objectReference: {fileID: 0}
     - target: {fileID: 273389606551298500, guid: 684414bc0609cec4190c2e5d1f5a468e, type: 3}
       propertyPath: healthValues.Array.data[2].TagName
       value: car
+      objectReference: {fileID: 0}
+    - target: {fileID: 273389606551298500, guid: 684414bc0609cec4190c2e5d1f5a468e, type: 3}
+      propertyPath: healthValues.Array.data[3].TagName
+      value: npc
       objectReference: {fileID: 0}
     - target: {fileID: 1153057683082989098, guid: 684414bc0609cec4190c2e5d1f5a468e, type: 3}
       propertyPath: target
