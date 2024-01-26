@@ -49,7 +49,7 @@ public class flight : MonoBehaviour
     {
         if (agent.enabled)
         {
-            if (Vector3.Distance(transform.position, targets[pointIndex].position) < 2 || !agent.hasPath)
+            if (Vector3.Distance(transform.position, targets[pointIndex].position) < agent.stoppingDistance || !agent.hasPath)
             {
                 agent.destination = targets[pointIndex].position;
                 incrementIndex();
